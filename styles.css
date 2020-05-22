@@ -10,12 +10,50 @@
   animation: flickerAnimation 0.3s 4;
 }
 
+@keyframes shift {
+	0%, 20%, 100%  { margin-top: 0; }
+	25%, 45% { margin-top: -21px; }
+	50%, 70% { margin-top: -42px; }
+	75%, 95% { margin-top: -63px; }
+	99.999% { margin-top: -84px; }
+}
+
 /* others */
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#navbar {
+  background-color: #333; /* Black background color */
+  position: fixed; /* Make it stick/fixed */
+  top: -50px; /* Hide the navbar 50 px outside of the top view */
+  width: 100%; /* Full width */
+  transition: top 0.3s; /* Transition effect when sliding down (and up) */
+  z-index: 4;
+  opacity: 0.9;
+  display: none;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 15px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+}
+
+#navbar a:hover {
+  background-color: #6497B1;
+  color: #000000;
 }
 
 a {
@@ -167,6 +205,30 @@ nav li {
   font-size: 16px;
   margin-bottom: 1.5em;
   max-width: 800px;
+}
+
+.word-carousel {
+  display: flex;
+  margin-bottom: 1.5em;
+}
+
+.intro {
+  margin-right: 5px;
+}
+
+.word-carousel .content {
+  overflow: hidden;
+  height: 21px;
+}
+
+.word-carousel .inner-content {
+  animation-name: shift;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+.word-carousel p {
+  margin-bottom: 2px;
 }
 
 .about-subsection {
@@ -338,6 +400,10 @@ footer {
 @media only screen and (min-width: 650px) {
   .carousel {
     height: 500px;
+  }
+
+  #navbar {
+    display: block;
   }
 }
 
