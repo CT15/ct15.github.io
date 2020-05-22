@@ -3,10 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <title>Calvin Tantio</title>
+
+    <link rel="stylesheet" href="carousel.css" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="preloader.css" />
+
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+
+    <script src="preloader.js"></script>
   </head>
   <body>
+    <div class="se-pre-con"></div> <!-- loading gif -->
+
     <section class="section main">
       <div class="main-content">
         <h1>calvin tantio</h1>
@@ -169,7 +180,48 @@
     </section>
     <section id="projects" class="section projects">
       <div class="projects-content">
-        <h1>Project: This section will be populated soon!</h1>
+        <h1> PROJECTS </h1>
+        <p>View more projects on <a href="https://www.github.com/CT15" target="__blank">Github</a></p>
+        <div class="carousel">
+          <ol class="carousel__viewport">
+            <li id="carousel__slide1" tabindex="0" class="carousel__slide">
+              <div class="carousel__snapper">
+                <img alt="bubble shooter" src="images/bubble-shooter.png" />
+              </div>
+            </li>
+            <li id="carousel__slide2" tabindex="0" class="carousel__slide">
+              <div class="carousel__snapper">
+                <img alt="worksauce" src="images/worksauce.png" />
+              </div> 
+            </li>
+            <li id="carousel__slide3" tabindex="0" class="carousel__slide">
+              <div class="carousel__snapper">
+                <img alt="ff calculator" src="images/ff-calculator.png" />
+              </div> 
+            </li>
+            <li id="carousel__slide4" tabindex="0" class="carousel__slide">
+              <div class="carousel__snapper">
+                <img alt="greenpeas" src="images/greenpeas.png" />
+              </div>
+            </li>
+          </ol>
+          <aside class="carousel__navigation">
+            <ol class="carousel__navigation-list">
+              <li class="carousel__navigation-item">
+                <a href="#carousel__slide1" class="carousel__navigation-button">Go to slide 1</a>
+              </li>
+              <li class="carousel__navigation-item">
+                <a href="#carousel__slide2" class="carousel__navigation-button">Go to slide 2</a>
+              </li>
+              <li class="carousel__navigation-item">
+                <a href="#carousel__slide3" class="carousel__navigation-button">Go to slide 3</a>
+              </li>
+              <li class="carousel__navigation-item">
+                <a href="#carousel__slide4" class="carousel__navigation-button">Go to slide 4</a>
+              </li>
+            </ol>
+          </aside>
+        </div>
       </div>
     </section>
     <footer id="contact" class="section">
