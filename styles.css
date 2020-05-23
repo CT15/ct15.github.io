@@ -209,6 +209,7 @@ nav li {
 
 .word-carousel {
   display: flex;
+  align-items: center;
   margin-bottom: 1.5em;
 }
 
