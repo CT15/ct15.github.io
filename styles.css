@@ -31,11 +31,11 @@ html {
 }
 
 #navbar {
-  background-color: #333; /* Black background color */
-  position: fixed; /* Make it stick/fixed */
-  top: -50px; /* Hide the navbar 50 px outside of the top view */
-  width: 100%; /* Full width */
-  transition: top 0.3s; /* Transition effect when sliding down (and up) */
+  background-color: #333;
+  position: fixed;
+  top: -50px;
+  width: 100%;
+  transition: top 0.3s;
   z-index: 4;
   opacity: 0.9;
   display: none;
