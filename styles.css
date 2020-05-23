@@ -92,11 +92,11 @@ h1 {
 }
 
 .main-content h1 {
-  font-size: 80px;
+  font-size: 60px;
 }
 
 .main-content h2 {
-  font-size: 40px;
+  font-size: 30px;
   font-family: 'Raleway', sans-serif;
   margin-bottom: 1em;
 }
@@ -112,7 +112,7 @@ li {
 }
 
 nav li {
-  width: 50%;
+  width: 100%;
   padding: 0.5em;
 }
 
@@ -133,7 +133,7 @@ nav li {
   justify-content: center;
 
   position: absolute;
-  bottom: 50px;
+  bottom: 1em;
 
   width: 100%;
 }
@@ -412,10 +412,6 @@ footer {
 
   #navbar {
     display: block;
-  }
-
-  nav li {
-    width: 100%;
   }
 }
 
